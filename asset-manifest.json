@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/habibtrizaka.github.io/static/css/main.a617e044.chunk.css",
-    "main.js": "/habibtrizaka.github.io/static/js/main.ade59f0b.chunk.js",
-    "main.js.map": "/habibtrizaka.github.io/static/js/main.ade59f0b.chunk.js.map",
+    "main.js": "/habibtrizaka.github.io/static/js/main.a027481b.chunk.js",
+    "main.js.map": "/habibtrizaka.github.io/static/js/main.a027481b.chunk.js.map",
     "runtime-main.js": "/habibtrizaka.github.io/static/js/runtime-main.30516426.js",
     "runtime-main.js.map": "/habibtrizaka.github.io/static/js/runtime-main.30516426.js.map",
     "static/js/2.fc848140.chunk.js": "/habibtrizaka.github.io/static/js/2.fc848140.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.30516426.js",
     "static/js/2.fc848140.chunk.js",
     "static/css/main.a617e044.chunk.css",
-    "static/js/main.ade59f0b.chunk.js"
+    "static/js/main.a027481b.chunk.js"
   ]
 }
