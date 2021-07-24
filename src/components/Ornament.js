@@ -1,8 +1,8 @@
 import React from "react";
 
-const Ornament = (props) => {
+const Ornament = ({color}) => {
   return (
-    <div className="ornament-box"/>
+    <div className="ornament-box" style={{backgroundColor: color}} />
   )
 }
 

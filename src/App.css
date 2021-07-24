@@ -2,13 +2,53 @@
   text-align: center;
 } */
 
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-porto {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "label img";
+}
+
+.grid-reverse {
+  grid-template-areas: "img label";
+}
+
+.porto-label {
+  grid-area: label;
+  padding: 0 65px 0 65px;
+  text-align: left;
+  display: block;
+}
+
+.porto-img {
+  grid-area: img;
+  background-color: #56DF58;
+  height: 558px;
+}
+
+.img-mockup {
+  filter: grayscale(100%);
+  transition: 0.2s ease-out;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
   max-width: 1140px;
   position: relative;
-  bottom: 20%;
+}
+
+.container:hover .img-mockup {
+  filter: grayscale(0%);
+  transition: 0.2s ease-out;
 }
 
 .section-hero {
@@ -16,8 +56,25 @@
   background-repeat: repeat;
   height: 100vh;
   width: 100%;
-  display: flex;
-  align-items: flex-end;
+}
+
+.btn {
+  all: unset;
+  letter-spacing: 0.375em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-lg {
+  font-size: 32px;
+}
+
+.btn-sm {
+  font-size: 24px;
+}
+
+.btn:hover {
+
 }
 
 h1.line {
@@ -42,8 +99,26 @@ h1 {
 
 h2 {
   font-size: 96px;
-  font-weight: 800;
+  font-weight: 900;
   margin: 0;
+}
+
+h3 {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 156%;
+}
+
+p {
+  font-size: 48px;
+  font-weight: 100;
+  line-height: 166.5%;
+  margin-top: 68px;
+  margin-bottom: 68px;
+}
+
+section {
+  min-height: fit-content;
 }
 
 @media (min-width : 1200px) {
