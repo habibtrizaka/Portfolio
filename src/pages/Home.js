@@ -9,7 +9,7 @@ const Home = (props) => {
 
   return (
     <div>
-      <Section className="section-hero" >
+      <Section className="hero" >
         <Container height="100vh">
           <div style={{ position: "absolute", bottom: "20%" }}>
             <Ornament />
@@ -35,12 +35,22 @@ const Home = (props) => {
       <Section paddingTop="185px" paddingBot="185px">
 
         <Portogrid reverse={false} img="mockup1.png">
-          <h3>Easly book and monitor your carwash.</h3>
-          <Button size="sm" color="#2b2b2b" label="Take a look" />
+          <h3>Stay sane with Restabili, your mental health care taker.</h3>
+          <a href="https://www.behance.net/gallery/129478525/Restabili-Mental-Health-Support-App/" rel="noreferrer" target="_blank">
+            <Button size="sm" color="#2b2b2b" label="Take a look" />
+          </a>    
         </Portogrid>
         <Portogrid reverse={true} img="mockup1.png">
-          <h3>Monitor your member activities using AMS.</h3>
-          <Button size="sm" color="#2b2b2b" label="Take a look" />
+          <h3>Easly consult with doctor using Telemedicine</h3>
+          <a href="https://www.behance.net/gallery/129478525/Restabili-Mental-Health-Support-App/" rel="noreferrer" target="_blank">
+            <Button size="sm" color="#2b2b2b" label="Take a look" />
+          </a>          
+        </Portogrid>
+        <Portogrid reverse={false} img="mockup1.png">
+          <h3>Stay sane with Restabili, your mental health care taker.</h3>
+          <a href="https://www.behance.net/gallery/129478525/Restabili-Mental-Health-Support-App/" rel="noreferrer" target="_blank">
+            <Button size="sm" color="#2b2b2b" label="Take a look" />
+          </a>    
         </Portogrid>
       </Section>
     </div>

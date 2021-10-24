@@ -10,6 +10,16 @@
   display: grid;
 }
 
+.container {
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  max-width: 1140px;
+  position: relative;
+  transition: 0.5s;
+}
+
 .grid-porto {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
@@ -27,31 +37,33 @@
   display: block;
 }
 
+.headline {
+  background-color: #2B2B2B;
+  height: 729px;
+}
+
 .porto-img {
   grid-area: img;
   background-color: #56DF58;
   height: 558px;
+  overflow: hidden;
 }
 
 .img-mockup {
   filter: grayscale(100%);
-  transition: 0.2s ease-out;
-}
-
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  max-width: 1140px;
-  position: relative;
+  transition: 0.6s ease-out;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .container:hover .img-mockup {
   filter: grayscale(0%);
-  transition: 0.2s ease-out;
+  transform: scale(1.05);
 }
 
-.section-hero {
+section.hero {
   background-image: url('./assets/square.png');
   background-repeat: repeat;
   height: 100vh;
@@ -59,10 +71,30 @@
 }
 
 .btn {
-  all: unset;
+  position: relative;
+  border: none;
+  background: none;
   letter-spacing: 0.375em;
   text-transform: uppercase;
+  display: inline-block;
   cursor: pointer;
+  z-index: 99;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  height: 40%;
+  width: 0%;
+  left: 0;
+  bottom: 0;
+  background: #56DF58;
+  transition: 0.3s ease-out;
+}
+
+.btn:hover::after{
+  width: 100%;
 }
 
 .btn-lg {
@@ -73,16 +105,26 @@
   font-size: 24px;
 }
 
-.btn:hover {
-
-}
-
 h1.line {
   width: fit-content;
+  position: relative;
+  /* background: #56DF58; */
   line-height: 156%;
-  background-image: url('./assets/line-green.png');
+  z-index: 1;
+  /* background-image: url('./assets/line-green.png');
   background-repeat: repeat-x;
-  background-position: 0 92%;
+  background-position: 0 92%; */
+}
+
+h1.line::after {
+  content: '';
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+  background: #56DF58;
 }
 
 .ornament-box {
