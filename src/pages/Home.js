@@ -34,7 +34,7 @@ const Home = (props) => {
 
       <Section paddingTop="185px" paddingBot="185px">
 
-        <Portogrid reverse={false} img="mockup1.png">
+        <Portogrid reverse={false} img="restabili.png">
           <h3>Stay sane with Restabili, your mental health care taker.</h3>
           <a href="https://www.behance.net/gallery/129478525/Restabili-Mental-Health-Support-App/" rel="noreferrer" target="_blank">
             <Button size="sm" color="#2b2b2b" label="Take a look" />

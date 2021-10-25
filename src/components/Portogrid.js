@@ -3,7 +3,7 @@ import Container from './Container';
 
 const Portogrid = ({ children, img, type, reverse }) => {
   return (
-    <Container className={"grid grid-porto" + (reverse ? " grid-reverse" : "")}>
+    <Container className={"grid grid-porto" + (reverse ? " grid-reverse" : "")} padding="0">
       <div className={"porto-label" + (type ? " " + type : "")}>
         {children}
       </div>
